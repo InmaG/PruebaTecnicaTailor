@@ -1,0 +1,298 @@
+{
+	"info": {
+		"_postman_id": "1ee55158-3b5e-4303-814b-78345214c819",
+		"name": "API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Restaurants",
+			"item": [
+				{
+					"name": "GET restaurants",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/restaurants",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"restaurants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET restaurant",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/restaurants/5",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"restaurants",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE restaurant",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/restaurants/1",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"restaurants",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST restaurant",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"restaurant\": {\n        \"name\": \"Pepe\",\n        \"neighborhood\": \"Pueblo Nuevo\",\n        \"photograph\": \"11.jpg\",\n        \"address\": \"919 Fulton St, Brooklyn, NY 11238\",\n        \"latlng\": {\n            \"lat\": 40.70,\n            \"lng\": -73.90\n        },\n        \"image\": \"https://media-cdn.tripadvisor.com/media/photo-s/17/07/cd/40/the-colony-and-vodka.jpg\",\n        \"cuisine_type\": \"Barbacoa\",\n        \"operating_hours\": {\n            \"Monday\": \"5:30 pm - 11:00 pm\",\n            \"Tuesday\": \"5:30 pm - 11:00 pm\",\n            \"Wednesday\": \"5:30 pm - 11:00 pm\",\n            \"Thursday\": \"5:30 pm - 11:00 pm\",\n            \"Friday\": \"5:30 pm - 11:00 pm\",\n            \"Saturday\": \"5:00 pm - 11:30 pm\",\n            \"Sunday\": \"12:00 pm - 3:00 pm, 5:00 pm - 11:00 pm\"\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/restaurants/",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"restaurants",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT restaurant",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"restaurant\": {\n        \"name\": \"Pepe\",\n        \"neighborhood\": \"Pueblo Nuevo\",\n        \"photograph\": \"11.jpg\",\n        \"address\": \"919 Fulton St, Brooklyn, NY 11238\",\n        \"latlng\": {\n            \"lat\": 40.70,\n            \"lng\": -73.90\n        },\n        \"image\": \"https://media-cdn.tripadvisor.com/media/photo-s/17/07/cd/40/the-colony-and-vodka.jpg\",\n        \"cuisine_type\": \"Barbacoa\",\n        \"operating_hours\": {\n            \"Monday\": \"5:30 pm - 11:00 pm\",\n            \"Tuesday\": \"5:30 pm - 11:00 pm\",\n            \"Wednesday\": \"5:30 pm - 11:00 pm\",\n            \"Thursday\": \"5:30 pm - 11:00 pm\",\n            \"Friday\": \"5:30 pm - 11:00 pm\",\n            \"Saturday\": \"5:00 pm - 11:30 pm\",\n            \"Sunday\": \"12:00 pm - 3:00 pm, 5:00 pm - 11:00 pm\"\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/restaurants/5",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"restaurants",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"item": [
+				{
+					"name": "signUp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"pepe@pepe.es\",\n    \"password\": \"pepepepe\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/signup",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"pepe@pepe.es\",\n    \"password\": \"pepepepe\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/login",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "auth",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAcGVwZS5lcyIsImlhdCI6MTY0Mjg5NDgwNCwiZXhwIjoxNjQzNDk5NjA0fQ.OAmJC-3hJKu-xTydLnOyjq78e4RROka-hHqwAxV4c30",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/auth",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "user favs",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAcGVwZS5lcyIsImlhdCI6MTY0Mjg5NjIwMSwiZXhwIjoxNjQzNTAxMDAxfQ.BLI7HleAS0HFVxMl0nFR-K7qCOIrCfB96J2r7W3DR74",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/user/favs",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"user",
+								"favs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user favs",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGVAcGVwZS5lcyIsImlhdCI6MTY0Mjg5NjIwMSwiZXhwIjoxNjQzNTAxMDAxfQ.BLI7HleAS0HFVxMl0nFR-K7qCOIrCfB96J2r7W3DR74",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"favRestaurants\": [\n        2,\n        15\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/user/favs",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"user",
+								"favs"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
