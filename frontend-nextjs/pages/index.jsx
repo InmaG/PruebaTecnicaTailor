@@ -10,10 +10,10 @@ export default function Home() {
       >
 
       <section className={utilStyles.headingMd}>
-          <p>[Your Self Introduction]</p>
+          <p>Lista de Restaurantes</p>
           <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+          Para acceder a la lista de restaurantes más populares  
+          <a href="http://localhost:3000/restaurants/restaurantsList"><strong> Pincha Aquí</strong></a>.
          </p>
       </section>
     </Layout>

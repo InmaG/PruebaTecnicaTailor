@@ -60,9 +60,7 @@ export default function Layout({children, title, description, home}) {
             <Link href="/about">
                 <a>About | </a>
             </Link>
-            <Link href="/restaurants/detalle">
-                <a>Detalle | </a>
-            </Link>
+           
             <Link href="/restaurants/restaurantsList">
                 <a>RestaurantsList | </a>
             </Link>
@@ -73,7 +71,7 @@ export default function Layout({children, title, description, home}) {
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
-            <a>← Back to home</a>
+            <a><strong> ← Back to home</strong></a>
           </Link>
         </div>
       )}
