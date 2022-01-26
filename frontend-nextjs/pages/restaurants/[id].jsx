@@ -1,4 +1,8 @@
 import Layout from "../../components/Layout"
+import React from 'react'
+//import Loader from 'react-loader-spinner'
+// import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
+
  
  
 //nos pinta por el parametro data
