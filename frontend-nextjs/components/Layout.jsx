@@ -3,7 +3,7 @@ import styles from '../styles/Layout.module.css'
 import Image from 'next/image';
 import Link from 'next/link';
 import utilStyles from '../styles/utils.module.css'
-import Header from './header'
+// import Header from './header'
 
 const name = "Restaurants"
 

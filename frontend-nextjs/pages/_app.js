@@ -1,8 +1,13 @@
 import '../styles/globals.css'
 import { useState } from 'react'
 import Router from 'next/router'
-
+// import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import Loader from "../components/Loader"
+import Login from '../pages/Login/Login'
+
+// import '../components/Title/Title.css'
+
+
 
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(false)
@@ -17,8 +22,11 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      {loading && <Loader />}
+       
+             {loading && <Loader />}
       <Component {...pageProps} />
+      <Login />
+      
     </>
     
   )
