@@ -17,11 +17,9 @@ export default function Home() {
       >
 
       <section className={utilStyles.headingMd}>
-          <p>Lista de Restaurantes</p>
-
-          
+                   
           <p>
-          Para acceder a la lista de restaurantes más populares  
+          Para acceder a la lista de restaurantes más populares   
           <a href="http://localhost:3000/restaurants/restaurantsList"><strong> Pincha Aquí</strong></a>.
          </p>
       </section>

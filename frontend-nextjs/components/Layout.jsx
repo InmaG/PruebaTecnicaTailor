@@ -3,7 +3,7 @@ import styles from '../styles/Layout.module.css'
 import Image from 'next/image';
 import Link from 'next/link';
 import utilStyles from '../styles/utils.module.css'
-// import Header from './header'
+import Header from './header'
 
 const name = "Restaurants"
 
@@ -20,6 +20,7 @@ export default function Layout({children, title, description, home}) {
             ></meta>
         </Head>
         <header className={styles.header}>
+         
         {home ? (
           <>
             <Image
@@ -67,8 +68,12 @@ export default function Layout({children, title, description, home}) {
             </Link>
 
         </nav>
+       
+           <main>
+            <div className='container'>{children}</div>
+           </main>
         
-        <main>{children}</main>
+        
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
@@ -78,13 +83,14 @@ export default function Layout({children, title, description, home}) {
       )}
     </div>
     
+    
   );
 }
 
 Layout.defaultProps ={
     title: "Next.js | Restaurants List",
     description: "Descripcion restaurantes"
-};
+}
 
 
 // function Layout({ user, loading = false, children }) {

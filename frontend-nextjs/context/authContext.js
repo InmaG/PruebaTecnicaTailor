@@ -66,7 +66,7 @@ export const AuthContextProvider = ({children}) => {
     }
   }
   const logout = async () => {
-    router.push('ruta')
+    router.push('/')
     // redirección del usuario a una página que no sea privada
     try {
       // fetch a logout
